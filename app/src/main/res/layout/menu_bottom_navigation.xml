@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="50dp"
+    android:layout_width="match_parent">
+    <item
+        android:id="@+id/action_map"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="One"/>
+    <item
+        android:id="@+id/action_dial"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="two" />
+    <item
+        android:id="@+id/action_mail"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Three" />
+    <item
+        android:id="@+id/action_smt"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="Four" />
+</menu>

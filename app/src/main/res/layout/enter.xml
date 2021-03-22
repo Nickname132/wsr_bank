@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+
+    >
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="224dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="72dp"
+        android:text="Авторизация"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="90dp"
+        android:text="Пользователь:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="167dp"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/user_text"
+        android:layout_marginLeft="19dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/user_text"
+        android:foregroundGravity="clip_vertical"
+        android:gravity="center"
+        android:hint="Логин">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_text"
+        android:layout_alignLeft="@+id/user_text"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="33dp"
+        android:text="Пароль:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="172dp"
+        android:layout_height="29dp"
+        android:layout_alignLeft="@+id/edit_user"
+        android:layout_alignRight="@+id/edit_user"
+        android:layout_alignBottom="@+id/password_text"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="-6dp"
+        android:layout_marginBottom="-2dp"
+        android:gravity="center"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_text"
+        android:layout_alignLeft="@+id/password_text"
+        android:layout_marginTop="10dp"
+        android:text="Попыток:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F44336"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="197dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="#CAADFF"
+        android:onClick="Login"
+        android:text="Войти"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/number_of_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/attempts"
+        android:layout_alignRight="@+id/user_text"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/attempts"
+        android:textColor="#F44336"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/login_locked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/attempts"
+        android:layout_alignLeft="@+id/attempts"
+        android:layout_alignRight="@+id/edit_password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-82dp"
+        android:layout_marginLeft="-82dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginBottom="202dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+</RelativeLayout>
